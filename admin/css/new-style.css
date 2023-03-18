@@ -1,0 +1,40 @@
+
+
+tr.odd td:first-child{
+    background-color: #FED100;
+    color: #333;
+    cursor: pointer;
+}
+
+th{
+    background-color: #333;
+    color: #fff;
+}
+
+div.drop-div{
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+}
+
+div.drop-div div {
+	height: auto;
+	width: 50%;
+}
+
+div.drop-div > div:nth-child(odd){
+	border-right: 1px solid #333;
+}
+
+@media screen and (max-width: 600px){
+	div.drop-div{
+		flex-direction: column;
+	}
+
+	div.drop-div div{
+		width: 100%;
+		border-right: none!important;
+	}
+}
+
